@@ -9,6 +9,7 @@ lli digitsum(lli x){
 int main(){
     lli n;
     cin>>n;
-    cout<<digitsum(n);
+    lli sum= n>0? digitsum(n) : digitsum(abs(n));
+    cout<<sum;
 
 }
